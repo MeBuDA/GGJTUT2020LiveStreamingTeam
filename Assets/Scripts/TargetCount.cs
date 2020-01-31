@@ -22,7 +22,6 @@ public class TargetCount : SingletonMonoBehaviour<TargetCount>
         if(Array.TrueForAll(count,element　=> element==true))
         {
             //クリア判定
-            Debug.Log("クリアだよー");
             SceneManager.LoadScene("Clear");
         }
     }
