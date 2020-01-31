@@ -12,7 +12,9 @@ public class TargetHitAlert : MonoBehaviour
         if(cube.tag == "Cube")
         {
             TargetCount.Instance.TargetHitCount(root.transform.GetSiblingIndex());
-            cube.transform.root.gameObject.GetComponent<Renderer>().sharedMaterial = yellow;
+            var cubeRoot = cube.transform.root.gameObject;
+            cubeRoot.GetComponent<Renderer>().sharedMaterial = yellow;
+            cubeRoot.GetComponent<Transform>().position = this.transform.position;
         }
     }
     void OnTriggerExit(Collider cube)
