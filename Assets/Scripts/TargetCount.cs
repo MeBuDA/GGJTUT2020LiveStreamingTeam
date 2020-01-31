@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
-public class TargetCount : MonoBehaviour
+public class TargetCount : SingletonMonoBehaviour<TargetCount>
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool[] count = new bool[4] { false, false, false,false };//管理
+
+    public void TargetHitCount(int id)
     {
-        
+        count[id] = true;
+    }
+    public void TargetDisHitCount(int id)
+    {
+        count[id] = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Array.TrueForAll(count,element　=> element==true))
+        {
+            //クリア判定
+            Debug.Log("クリアだよー");
+            SceneManager.LoadScene("Clear");
+        }
     }
 }
