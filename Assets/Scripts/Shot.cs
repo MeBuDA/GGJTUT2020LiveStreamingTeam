@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shot : MonoBehaviour
 {
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] private CriAtomSource Enemy_CAS;
     [SerializeField] float shotSpeed = 500;
     [SerializeField] int shotInterval;
     void Update ()
@@ -16,6 +17,7 @@ public class Shot : MonoBehaviour
             var bullet = (GameObject) Instantiate (bulletPrefab, this.transform.position + this.transform.forward, Quaternion.identity);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody> ();
             bulletRb.AddForce (transform.forward * shotSpeed);
+            Enemy_CAS.Play();
         }
     }
 }
