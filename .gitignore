@@ -62,3 +62,8 @@ crashlytics-build.properties
 Assets/Model
 Assets/StreamingAssets
 
+#ADX
+Editor
+Gizmos/CriWare
+Material
+Plugins
