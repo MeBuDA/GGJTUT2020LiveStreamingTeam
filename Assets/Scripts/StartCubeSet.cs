@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartCubeSet : MonoBehaviour
 {
     [SerializeField] GameObject cube;
-    public Vector3[] point { get; set; }
+    public Vector3[] point = new Vector3[4];
     void Start()
     {
         for (int i = 0; i < 4; i++)
