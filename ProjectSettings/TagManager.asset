@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Cube
   - kabe
+  - CubeSoto
+  - Bullet
   layers:
   - Default
   - TransparentFX
