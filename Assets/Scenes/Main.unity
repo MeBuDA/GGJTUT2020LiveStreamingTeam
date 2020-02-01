@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 29127182}
   m_Layer: 0
   m_Name: kabeR
-  m_TagString: Untagged
+  m_TagString: kabe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 42556710}
   m_Layer: 0
   m_Name: kabeUp
-  m_TagString: Untagged
+  m_TagString: kabe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,7 +502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129643472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: -3.55}
+  m_LocalPosition: {x: 0, y: 0.57, z: -3.988}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -721,6 +721,7 @@ GameObject:
   - component: {fileID: 690438146}
   - component: {fileID: 690438145}
   - component: {fileID: 690438144}
+  - component: {fileID: 690438148}
   m_Layer: 0
   m_Name: EnemyL
   m_TagString: Untagged
@@ -795,12 +796,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690438143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0, z: -5.25}
+  m_LocalPosition: {x: 0.22, y: -0.5, z: -5.25}
   m_LocalScale: {x: 1, y: 0.8, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &690438148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690438143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3dde1ec50e54fdfb10546a2d1807c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 373297063579315586, guid: 85597e3f1bee4460aa31a96969c4074d,
+    type: 3}
+  shotSpeed: 300
+  shotInterval: 100
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1157,7 @@ GameObject:
   - component: {fileID: 1391846199}
   - component: {fileID: 1391846198}
   - component: {fileID: 1391846197}
+  - component: {fileID: 1391846201}
   m_Layer: 0
   m_Name: EnemyR
   m_TagString: Untagged
@@ -1214,12 +1232,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391846196}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.25, y: 0, z: -4}
+  m_LocalPosition: {x: 5.25, y: -0.5, z: -4}
   m_LocalScale: {x: 1, y: 0.8, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1391846201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391846196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3dde1ec50e54fdfb10546a2d1807c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 373297063579315586, guid: 85597e3f1bee4460aa31a96969c4074d,
+    type: 3}
+  shotSpeed: 300
+  shotInterval: 100
 --- !u!1 &1519143182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1478,7 @@ GameObject:
   - component: {fileID: 1939399220}
   m_Layer: 0
   m_Name: kabeL
-  m_TagString: Untagged
+  m_TagString: kabe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1536,7 +1570,7 @@ GameObject:
   - component: {fileID: 2068032942}
   m_Layer: 0
   m_Name: kabeDown
-  m_TagString: Untagged
+  m_TagString: kabe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

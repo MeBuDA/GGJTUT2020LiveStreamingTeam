@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] float shotSpeed = 500;
+    [SerializeField] int shotInterval;
     void Update ()
     {
-        var num = Random.Range (0, 500);
+        var num = Random.Range (0, shotInterval);
 
         if (num == 0)
         {
-
+            var bullet = (GameObject) Instantiate (bulletPrefab, this.transform.position + this.transform.forward, Quaternion.identity);
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody> ();
+            bulletRb.AddForce (transform.forward * shotSpeed);
         }
     }
 }
