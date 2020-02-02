@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
  
 public class TimeManager : MonoBehaviour {
  
@@ -41,7 +42,7 @@ public class TimeManager : MonoBehaviour {
 		oldSeconds = seconds;
 		//　制限時間以下になったらコンソールに『制限時間終了』という文字列を表示する
 		if(totalTime <= 0f) {
-			Debug.Log("制限時間終了");
+			SceneManager.LoadScene("Result");
 		}
 	}
 }

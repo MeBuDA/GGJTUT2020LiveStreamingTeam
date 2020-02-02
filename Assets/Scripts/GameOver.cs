@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
     {
         if(HP.Heart<=0)
         {
-            SceneManager.LoadScene ("Start");
+            SceneManager.LoadScene ("Result");
         }
     }
 }
