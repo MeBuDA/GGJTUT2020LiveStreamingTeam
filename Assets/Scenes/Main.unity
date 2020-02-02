@@ -3335,7 +3335,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 012af375808704a5c9f0f2e755f26cea, type: 3}
     m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
@@ -3485,7 +3485,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 012af375808704a5c9f0f2e755f26cea, type: 3}
     m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
@@ -3497,7 +3497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30B3\u30A2"
+  m_Text: "\u30B9\u30B3\u30A2 : 0"
 --- !u!222 &1335625432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4037,6 +4037,7 @@ GameObject:
   - component: {fileID: 1519143186}
   - component: {fileID: 1519143187}
   - component: {fileID: 1519143188}
+  - component: {fileID: 1519143189}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4138,6 +4139,19 @@ MonoBehaviour:
   - {fileID: 1095620508}
   - {fileID: 1949092596}
   CubeSet: {fileID: 1519143185}
+  text: {fileID: 1335625431}
+--- !u!114 &1519143189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519143182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50cb46d8b4184f4d87437d0843832b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519819346
 GameObject:
   m_ObjectHideFlags: 0
