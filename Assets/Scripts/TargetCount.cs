@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class TargetCount : SingletonMonoBehaviour<TargetCount>
 {
     private bool[] count = new bool[4] { false, false, false,false };//管理
+    [SerializeField] MinoReset reset;
 
     public void TargetHitCount(int id)
     {
@@ -21,8 +22,11 @@ public class TargetCount : SingletonMonoBehaviour<TargetCount>
     {
         if(Array.TrueForAll(count,element　=> element==true))
         {
-            //クリア判定
-            SceneManager.LoadScene("Clear");
+            for (int i = 0; i < count.Length; i++)
+            {
+                count[i] = false;
+            }
+            reset.MinoReSet();
         }
     }
 }

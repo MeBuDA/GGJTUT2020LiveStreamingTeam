@@ -6,7 +6,7 @@ public class BulletKill : MonoBehaviour
 {
     void OnTriggerEnter (Collider kabe)
     {
-        if (kabe.tag == "kabe" || kabe.tag == "CubeSoto")
+        if (kabe.tag == "kabe" || kabe.tag == "CubeSoto" || kabe.tag == "Player")
         {
             Destroy (this.gameObject);
         }
