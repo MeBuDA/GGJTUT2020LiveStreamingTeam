@@ -7,6 +7,7 @@ public class TargetHitAlert : MonoBehaviour
     [SerializeField] GameObject root;//親を入れる
     [SerializeField] Material yellow;
     [SerializeField] Material white;
+    [SerializeField] CriAtomSource matoCAS;
     void OnTriggerEnter(Collider cube)
     {
         if(cube.tag == "Cube")
@@ -15,6 +16,7 @@ public class TargetHitAlert : MonoBehaviour
             var cubeRoot = cube.transform.root.gameObject;
             cubeRoot.GetComponent<Renderer>().sharedMaterial = yellow;
             cubeRoot.GetComponent<Transform>().position = this.transform.position;
+            matoCAS.GetComponent<CriAtomSource>().Play();
         }
     }
     void OnTriggerExit(Collider cube)
